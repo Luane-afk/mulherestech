@@ -1,2 +1,2 @@
 # mulherestech
-dedica para novos projetos em python
+projeto de aprendizado sobre python
