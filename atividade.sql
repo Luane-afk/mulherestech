@@ -31,3 +31,8 @@ CREATE TABLE tutor(
     -- consulta da colocação dos dados 
     
     SELECT * FROM tutor WHERE id_tutor=582
+CREATE TABLE disciplina (  
+	    id_disciplina INT PRIMARY KEY  
+	    nome_disciplina VARCHAR(100) NOT NULL, -- Nome da disciplina  
+	    matricula_prof INT, -- Relaciona com professores  
+	    CONSTRAINT fk_disciplina_prof FOREIGN KEY (matricula_prof) REFERENCES professores(matricula_prof)
